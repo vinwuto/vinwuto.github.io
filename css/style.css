@@ -34,6 +34,9 @@ h1 {
     )
 }
 
+#logo {
+    background-color: transparent;
+}
 /* WHAT WE DO SECTION */
 
 .wrapper-wwd {
