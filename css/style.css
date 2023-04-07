@@ -97,7 +97,12 @@ h1 {
     padding: 10px 25px;
 }
 
-/* APPLY CSS */
+footer {
+    height: 1000px;
+    background-image: url("/images/background.jpg")
+}
+
+/* --------------------APPLY CSS----------------------- */
 .wrapper-apply div {
     margin: 5%;
     border: solid;
