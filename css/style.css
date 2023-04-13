@@ -96,10 +96,27 @@ h5 {
     background-position: 0%;
     background-color: white !important;
   }
+
 .navbar {
     background-color: #F1F1F1 !important;
 }
+.navbar-toggler-icon:active {
+    outline:red;
+    border:red;
+}
 
+.navbar-toggler:hover {
+    outline:red;
+    border:red;
+}
+.hide {
+    border:none;
+    background-image: url("../images/open-hamburger-menu.png") !important;
+    background-size: cover;
+    width:30px;
+    background-position: 0%;
+    background-color: white !important;
+}
 /* HEADER */
 .carousel-header {
     position: absolute;
