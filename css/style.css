@@ -100,15 +100,7 @@ h5 {
 .navbar {
     background-color: #F1F1F1 !important;
 }
-.navbar-toggler-icon:active {
-    outline:red;
-    border:red;
-}
 
-.navbar-toggler:hover {
-    outline:red;
-    border:red;
-}
 .hide {
     border:none;
     background-image: url("../images/open-hamburger-menu.png") !important;
