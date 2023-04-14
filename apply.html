@@ -20,26 +20,26 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><img id="logo" src="images/logo.svg"></a>
+      <a class="navbar-brand" href="index.html"><img id="logo" src="images/logo.svg"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
               <a class="nav-link" href="apply.html">Apply</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="our-work.html">Our Work</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="learn.html">Learn</a>
+              <a class="nav-link" href="learn.html">Education</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="faq.html">FAQ</a>
@@ -50,19 +50,45 @@
         </ul>
       </div>
     </nav>
-    <div class="wrapper-apply">
       <!--Jumbotron-->
-        <div class="jumbotron">
-          <h1 class="display-4">Apply to Bloomspace</h1>
-          <p class="lead">Let's get to know each other</p>
+      <div class="jumbotron education-jumbo jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Apply for a Redesign</h1>
+          <p class="lead">Let's get to know each other!</p>
+        </div>
+      </div>
+      <div class="title">
+        <p>Accepted applicants will receive a personalized proposal via email detailing their custom space renovation, before committing to any contracts.
+          <br><br>
+          All questions are optional, but the more you tell us, the better we’ll understand your space, your goals, and if Bloomspace is the right fit for your needs.</p>
+      </div>
+    <!--Start of Form, Tabs are each page-->
+    <form id="apply-form" action="">
+      <!-- Basic Info-->
+      <div class="tab">
+        <div class="divider">
+          <h1>Basic Information</h1>
+          <img src="images/divider.png">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="company-name">Business Name</label>
+          <input type="text" class="form-control" id="company-name" placeholder="Business Company LLC">
+        </div>
+        <div class="form-group">
+          <label for="address">Business Address</label>
+          <input type="text" class="form-control" id="address" placeholder="123 Street Place, Chicago, IL 60607">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" class="form-control" id="phone" name = "phone" placeholder="(123) 456-7890">
         </div>
       <!--Question 1-->
-        <div class="form-group">
-          <label for="interest-form">Why are you interested in an eco-renovation?</label>
-          <textarea class="form-control" id="interest-form" rows="3"></textarea>
-        </div>
-      <!--Question 2-->
-        <div class="question-2">
+        <div class="question-1">
           <p>Are you looking to:</p>
           <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="q2-1">
@@ -83,25 +109,124 @@
               </label>
           </div>
         </div>
-      <!--Question 3-->
-      <div class="form-group">
+        <!--Question 2-->
+        <div class="form-group">
+          <label for="interest-form">Why are you interested in an eco-renovation?</label>
+          <textarea class="form-control" id="interest-form" rows="3"></textarea>
+        </div>
+        <br>
+      </div>
+      
+    <!--Start of Page 2-->
+      <div class="tab">
+        <div class="divider">
+          <h1>Community</h1>
+          <img src="images/divider.png">
+        </div>
+        <div class="form-group">
+          <label for="community-relationship">Describe your relationship with the local residents and business owners in your business’s neighborhood.</label>
+          <textarea class="form-control" id="community-relationship" rows="3"></textarea>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="programming">Have you participated in community programming in this neighborhood in the past? If so, please describe those programs.</label>
+          <textarea class="form-control" id="programming" rows="3"></textarea>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="non-tenant">Our eco-renovations center the surrounding community and prioritizes welcoming local residents into the space. Will you grant access to non-tenant community members in exchange for their assistance in maintaining the space?</label>
+          <textarea class="form-control" id="non-tenant" rows="3"></textarea>
+        </div>
+        <br>
+      </div>
+    <!--Start of Page 3 -->
+      <div class="tab">
+        <div class="divider">
+          <h1>Sustainability</h1>
+          <img src="images/divider.png">
+        </div>
+        <div class="form-group">
           <label for="energy-data">Include any data you have about the current energy usage and carbon footprint of the building(s) to be retrofitted.</label>
           <textarea class="form-control" id="energy-data" rows="3"></textarea>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="energy-goals">Do you have goals relating to sustainability and environmental stewardship?</label>
+          <textarea class="form-control" id="energy-goals" rows="3"></textarea>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="energy-expectations">What are your energy saving goals and expectations from this renovation?
+            <br><br> 
+            Ex: lower energy bills, reduced maintenance costs</label>
+          <textarea class="form-control" id="energy-expectations" rows="3"></textarea>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="energy-previous">Have you previously considered or sought out sustainable practices in your building and/or business? If so, please describe.</label>
+          <textarea class="form-control" id="energy-previous" rows="3"></textarea>
+        </div>
+        <br>
       </div>
-      <!--Question 4-->
-      <div class="form-group">
-          <label for="infrastructure-data">Information about the building's existing infrastructure, such as HVAC, lighting, and insulation.</label>
-          <textarea class="form-control" id="infrastructure-data" rows="3"></textarea>
+    <!--Start of Page 4-->
+      <div class="tab">
+        <div class="divider">
+          <h1>Financials</h1>
+          <img src="images/divider.png">
+        </div>
+        <div class="form-group">
+          <label for="org-finances">Detail your organization's financial statements, including revenue, expenses, and any existing debt.</label>
+          <textarea class="form-control" id="org-finances" rows="3"></textarea>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="budget">While Bloomspace provides most of our project funding, there may be additional costs not covered, including client’s requests that extend beyond our renovation proposal, and upkeep and maintanance costs. Do you have a budget allocated for this building improvement projects, and if so, what is it?</label>
+          <textarea class="form-control" id="budget" rows="3"></textarea>
+        </div>
+        <br>
       </div>
-      <!--Question 5-->
-      <div class="form-group">
-          <label for="relationship-data">Describe your relationship with the local residents and business owners in your business’s neighborhood.</label>
-          <textarea class="form-control" id="relationship-data" rows="3"></textarea>
+    <!--Start of Page 5-->
+      <div class="tab">
+        <div class="divider">
+          <h1>Your Space</h1>
+          <img src="images/divider.png">
+        </div>
+        <div class="form-group">
+          <label for="upload-button1">Upload photos and videos of the spaces you would consider renovating.</label>
+          <br>
+          <button type="button" class="btn btn-outline-dark" id="upload-button1">Upload</button>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="upload-button2">Upload blueprints and building plans including surrounding property, roof, and parking lots if applicable.</label>
+          <br>
+          <button type="button" class="btn btn-outline-dark" id="upload-button2">Upload</button>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="contractor">If you currently work with a contractor or builder, please outline their role and provide contact information</label>
+          <textarea class="form-control" id="contractor" rows="3"></textarea>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="infrastructure">Information about the building's existing infrastructure, such as HVAC, lighting, and insulation.</label>
+          <textarea class="form-control" id="infrastructure" rows="3"></textarea>
+        </div>
+        <br>
       </div>
-    </div>
-    <div class="button-wrapper">
-      <a class="btn btn-outline-primary btn-lg apply-finish" href="proposal.html" role="button">Submit</a>
-    </div>
+      <div class="button-wrapper">
+        <button type="button" class="btn btn-outline-dark" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" class="btn btn-outline-dark" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+    </form>
+    
     <footer>
       <div class="footer-text-wrapper">
         <h1><span style="font-size: 32">Bloomspace</span></h1>

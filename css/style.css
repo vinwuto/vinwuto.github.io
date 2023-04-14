@@ -284,9 +284,12 @@ footer {
 }
 
 /* --------------------APPLY CSS----------------------- */
-.wrapper-apply div {
-    margin: 5%;
-    border: solid;
+
+#apply-form {
+    margin: 25px 5%;
+    background-color: #E6E6FA;
+    padding: 50px;
+    border-radius: 12px;
 }
 
 .form-check {
@@ -303,17 +306,39 @@ footer {
     margin: 5%;
 }
 
+.tab {
+    display: none;
+}
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.finish {
+    background-color: #04AA6D
+}
 /* PROPOSAL CSS */
 
 .wrapper-proposal {
     margin: 5%;
 }
-.pictures-wrapper {
-    height: 500px;
-}
+
 .proposal-picture {
-    background-color: grey;
-    height: 100%;
+    padding: 25px;
+}
+
+.proposal-picture img {
+    width: 100%;
 }
 
 /* --------------------------- EDUCATION PAGE ----------------------- */
