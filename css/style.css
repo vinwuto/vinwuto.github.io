@@ -31,6 +31,10 @@ h5 {
     font-size: 32px;
 }
 
+.active a {
+    color: #0077BE !important;
+    text-decoration: underline;
+}
 .background1 {
     background-image: url(../images/background-rect.png);
     position: absolute;
