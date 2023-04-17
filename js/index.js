@@ -8,6 +8,23 @@ $(function() {
     $(this).val($(this).val().replace(/^(\d{3})(\d{3})(\d+)$/, "($1) $2-$3"));
 });
 
+$(document).ready(function(){
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#btn-back-to-top').fadeIn();
+			} else {
+				$('#btn-back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#btn-back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
+});
+
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
@@ -80,3 +97,4 @@ function fixStepIndicator(n) {
   //... and adds the "active" class to the current step:
   x[n].className += " active";
 }
+
